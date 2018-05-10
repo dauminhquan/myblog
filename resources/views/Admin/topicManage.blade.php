@@ -42,10 +42,10 @@
 
                     @foreach($data as $item)
                         <tr>
-                            <td><a href="#">{{$item->url}}</a></td>
-                            <td><a href="#">{{$item->title}}</a></td>
-                            <td><a href="#">{{$item->name}}</a></td>
-                            <td><a href="#">{{$item->created_at}}</a></td>
+                            <td><a href="{{route("admin.quanlybaidang.chitietbaidang",["id" => $item->id])}}">{{$item->url}}</a></td>
+                            <td>{{$item->title}}/td>
+                            <td>{{$item->name}}</td>
+                            <td>{{$item->created_at}}</td>
                         </tr>
                     @endforeach
 
