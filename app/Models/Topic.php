@@ -8,6 +8,10 @@ class Topic extends Model
 {
     public function user()
     {
-        return $this->hasOne('App\Models\User');
+        return $this->belongsTo('App\Models\Users');
+    }
+    public function field()
+    {
+        return $this->belongsTo('App\Models\Field');
     }
 }

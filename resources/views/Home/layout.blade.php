@@ -18,6 +18,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href='//fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    @section("css")
+        @show
     <link href="{{asset('css/style.css')}}" rel='stylesheet' type='text/css' />
 
 
@@ -31,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="search">
                     <input class="search_box" type="checkbox" id="search_box">
                     <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-                    <div class="search_form">
+                    <div class="search_form" style="z-index: 999">
                         <form action="#" method="post">
                             <input type="text" name="Search" placeholder="Search...">
                             <input type="submit" value="Send">
@@ -44,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <nav class="navbar navbar-default">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -53,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                <div class="" id="bs-example-navbar-collapse-1">
                     <nav class="link-effect-7" id="link-effect-7">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Trang chủ</a></li>
@@ -80,6 +82,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li><a href="#" class="vimeo"> </a></li>
             </ul>
         </div>
+        <div class="clearfix"> </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-2">
+            <nav class="menu-mobile" id="link-effect-7">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Tin sao</a></li>
+                    <li><a href="http://localhost:8000/am-thuc">Ẩm thực</a></li>
+                    <li><a href="travel.html">Xã hội</a></li>
+                    <li><a href="fashion.html">Game</a></li>
+                    <li><a href="music.html">Truyện</a></li>
+                    <li><a href="codes.html">Công nghệ thông tin</a></li>
+                    <li><a href="contact.html">Hỗ trợ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.navbar-collapse -->
         <div class="clearfix"> </div>
     </div>
 </div>

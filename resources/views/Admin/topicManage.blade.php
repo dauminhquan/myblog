@@ -42,8 +42,8 @@
 
                     @foreach($data as $item)
                         <tr>
-                            <td><a href="{{route("admin.quanlybaidang.chitietbaidang",["id" => $item->id])}}">{{$item->url}}</a></td>
-                            <td>{{$item->title}}/td>
+                            <td><a href="{{route("admin.topicManage.info",["id" => $item->id])}}">{{$item->url}}</a></td>
+                            <td>{{$item->title}}</td>
                             <td>{{$item->name}}</td>
                             <td>{{$item->created_at}}</td>
                         </tr>

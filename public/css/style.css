@@ -1612,7 +1612,7 @@ span.glyphicon.glyphicon-comment, span.glyphicon.glyphicon-eye-open, span.glyphi
 	line-height:1.8em;
 }
 .m1 {
-    margin: 2em 0 0;
+    margin: 2em 0 2em;
 }
 .paging{
 	margin:3em 0 0; 
@@ -1865,8 +1865,19 @@ h5.top {
     top: 92%;
 }
 }
+
+@media (min-width: 768px){
+    .navbar-collapse.collapse{
+        display: none !important;
+    }
+}
+
 /*-- responsive design --*/
 @media(max-width:767px){
+    .header_right #bs-example-navbar-collapse-1 {
+        display: none;
+    }
+
 .navbar-toggle {
     padding: 9px 10px;
     margin-top: 28px;
@@ -1922,7 +1933,7 @@ h5.top {
     color: #1D0E05;
 }
 .header_right {
-    float: left;
+    float: right;
 	width:47%;
 }
 .head-left {
@@ -2439,4 +2450,30 @@ h3.tieude-baiviet{
 p.tomtat-baiviet{
     margin-top: 5px;
     font-size: 12px;
+}
+
+.menu-mobile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-mobile li {
+    float: left;
+}
+
+.menu-mobile li a {
+    display: block;
+    color: #070a30;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu-mobile li a:hover {
+    background-color: #bee5eb;
+}
+.topic-title h2.w3{
+    font-family: 'Open Sans', sans-serif !important;
+    color: #82247b;
 }

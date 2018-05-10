@@ -124,6 +124,7 @@
                     <div class="clearfix"></div>
 
                     <div class="separator">
+
                         <p class="change_link">Đã có tài khoản ?
                             <a href="#signin" class="to_register"> Đăng nhập </a>
                         </p>

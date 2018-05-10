@@ -16,7 +16,7 @@
             <div class="x_content">
 
                 <!-- start form for validation -->
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     <label for="fullname">Chọn lĩnh vực:</label>
                     @if(isset($fail))
                         @if($fail->has("field_id"))
@@ -65,8 +65,17 @@
                             @endforeach
                         @endif
                     @endif
-
                     <input type="text" id="summary" class="form-control" name="summary" data-parsley-trigger="change" required />
+
+                    @if(isset($fail))
+                        @if($fail->has("avatar"))
+                            @foreach ($fail->get('avatar') as $message)
+                                <p style="color: red;">{{$message}}</p>
+                            @endforeach
+                        @endif
+                    @endif
+                    <label>Tải ảnh nền mới</label>
+                    <input type="file" name="avatar" required accept="image/*">
 
                     <label for="message">Nội dung bài viết *</label>
 
